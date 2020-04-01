@@ -35,3 +35,19 @@ function fillArray(index, value) {
 }
 
 fillArray(10,2)
+
+// Clean Function - write a js function to filter false,null,0 and blank values from an array
+
+function filterArrayValue(array) {
+    
+    for (i = 0; i<array.length; i++) {
+        if (array[i] === 0 || array[i] === null || array[i] === false){ //still need to figure out how to remove the empty valueß
+            array.splice(i)
+        } 
+        // console.log(array)
+    }
+    console.log(array);
+    
+}
+
+filterArrayValue([58, '', 'abcd', true, null, false, 0])
